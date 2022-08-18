@@ -1,5 +1,6 @@
 void main (){
   
+  // Esto es un json con los datos de un heroe
   final rawJson = {
     
     'vida' : 100,
@@ -30,7 +31,7 @@ class Heroe{
 //   Esto es un constructor de la clase Hereo, en donde inicializamos las variables
   Heroe({ required this.vida, required this.nombre, required this.poder });
   
-//   Esta es la syntaxis de un constructor con nombre
+//   Esta es la syntaxis de un constructor con nombre, se utilizan cuando recibiremos los valores desde otro lado, en este caso un json
   Heroe.fromJson( Map<String, dynamic> json ):
     
 //   El '!' es para que decirle a dart que si o si recibira el valor, por lo tanto no arroja error.
